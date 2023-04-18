@@ -127,28 +127,28 @@ header button {
 h3 {
   margin-bottom: 20px;
 }
-.fourth-section div:nth-child(1) {
-  margin-right: 30px;
-}
-.fourth-section div:nth-child(2) {
+.map-fourth-section {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
-  margin-left: 20px;
   background-color: #ff5d5d;
   border-radius: 10px;
 }
-
 .fourth-section img {
+  display: flex;
+  flex-direction: column;
   height: 200px;
 }
 .fourth-section p {
   font-size: 20px;
+  padding-right: 60px;
 }
 .fourth-section button {
   font-size: 16px;
   margin-top: 20px;
-  line-height: 20px;
-  margin-bottom: 20px;
+  width: 170px;
+  line-height: 40px;
+  margin-bottom: 10px;
   border-radius: 15px;
-  height: 40px;
 }
 /***********FOOTER**************/
