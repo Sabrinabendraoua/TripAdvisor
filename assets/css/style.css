@@ -1,14 +1,13 @@
 body {
   margin: 50px 100px 0px 100px;
   align-items: center;
+  font-family: "Trip Sans Reg";
 }
 /***********GENERAL**************/
 .buton-black {
   background: black;
   font-weight: bold;
   color: #fff;
-  border-radius: 25px;
-  height: 30px;
 }
 /************HEADER**************/
 header {
@@ -21,16 +20,20 @@ header > div img {
 header p {
   font-size: 16px;
   font-weight: bold;
+  margin-left: 5px;
 }
-nav {
-  border: 1px solid red;
+header nav {
   display: flex;
   align-items: center;
 }
-nav div {
-  border: 1px solid green;
+header nav div {
   display: flex;
   margin: 0 10px;
+}
+header button {
+  border-radius: 25px;
+  height: 30px;
+  margin-left: 10px;
 }
 /************MAIN***************/
 
