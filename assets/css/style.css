@@ -93,4 +93,21 @@ h1 span {
   height: 200px;
   object-fit: cover;
 }
+
+/*-------------third-section------------*/
+.third-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.third-section div:nth-child(1) {
+  display: flex;
+}
+.third-section P {
+  margin-right: 5px;
+}
+.third-section i {
+  margin-right: 10px;
+  height: 5px;
+}
 /***********FOOTER**************/
