@@ -182,11 +182,11 @@ h3 {
   border-radius: 15px;
 }
 /*-------------carrousel-section------------*/
-/* POUR MASQUER LA SCROLLBAR 
+/* POUR MASQUER LA SCROLLBAR */
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
-}*/
+}
 .carrousel-section {
   width: 1135px;
   margin-bottom: 100px;
