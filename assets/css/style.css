@@ -6,7 +6,9 @@ body {
   margin: 50px 100px 0px 100px;
   font-family: "Trip Sans Reg", sans-serif;
 }
-
+main {
+  width: 1135px;
+}
 /***********GENERAL**************/
 .buton-black {
   background: black;
