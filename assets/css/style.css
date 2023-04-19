@@ -5,8 +5,8 @@
 body {
   margin: 50px 100px 0px 100px;
   align-items: center;
-  font-family: "Trip Sans Reg";
-  width: 1024px;
+  font-family: "Trip Sans Reg", sans-serif;
+  width: 1135px;
 }
 
 /***********GENERAL**************/
@@ -34,15 +34,19 @@ h3 {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 75px;
 }
-header > div img {
-  height: 50px;
+header div img {
+  height: 40px;
 }
-header p {
+header p,
+a {
   font-size: 16px;
   font-weight: bold;
-  margin-left: 5px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
 }
 header nav {
   display: flex;
@@ -55,7 +59,6 @@ header nav div {
 header button {
   border-radius: 25px;
   height: 30px;
-  margin-left: 10px;
 }
 /************MAIN***************/
 
