@@ -81,6 +81,13 @@ header button:hover {
 /************MAIN***************/
 
 /*-------------first-section------------*/
+.first-section {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
 .first-section nav {
   display: flex;
   margin-top: 20px;
