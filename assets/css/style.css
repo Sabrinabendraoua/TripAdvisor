@@ -15,6 +15,11 @@ body {
   font-weight: bold;
   color: #fff;
 }
+button {
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+}
 h1 {
   font-size: 32px;
   font-weight: bold;
@@ -60,22 +65,26 @@ header button {
   border-radius: 25px;
   height: 30px;
 }
+header button:hover {
+  opacity: 0.5;
+}
 /************MAIN***************/
 
 /*-------------first-section------------*/
 .first-section nav {
   display: flex;
   margin-top: 20px;
+  gap: 10px;
 }
 .first-section nav div {
   display: flex;
   justify-content: space-between;
   flex: 1;
   border: black 2px solid;
-  border-radius: 10px;
+  border-radius: 15px;
   height: 50px;
   padding: 10px;
-  margin-right: 10px;
+  align-items: center;
 }
 .first-section nav div:hover {
   background-color: #ff5d5d;
@@ -90,21 +99,29 @@ header button {
 }
 
 /*-------------second-section------------*/
-.second-section {
+.picture-section {
   display: flex;
   margin-top: 20px;
+  height: 480px;
+  gap: 2px;
 }
-.second-section div:nth-child(1) {
+.picture-section div:nth-child(1) {
   display: flex;
   flex: 1;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
 }
-.img-second-section img {
+.picture-section div:last-child {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 200px;
+  height: 100%;
+  width: 480px;
+  object-fit: cover;
+}
+.picture-section div:last-child div {
+  height: 50%;
+  width: 400px;
   object-fit: cover;
 }
 
