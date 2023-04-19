@@ -4,7 +4,6 @@
 
 body {
   margin: 50px 100px 0px 100px;
-  align-items: center;
   font-family: "Trip Sans Reg", sans-serif;
   width: 1135px;
 }
@@ -68,6 +67,7 @@ header nav {
 header nav div {
   display: flex;
   margin: 0 10px;
+  align-items: center;
 }
 header button {
   border-radius: 25px;
@@ -182,10 +182,17 @@ h3 {
   border-radius: 15px;
 }
 /*-------------carrousel-section------------*/
+/* POUR MASQUER LA SCROLLBAR 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}*/
 .carrousel-section {
   width: 1135px;
+  margin-bottom: 100px;
 }
 .text-carrousel-section {
+  border: blue solid 2px;
   display: flex;
   margin-top: 20px;
 }
@@ -193,23 +200,25 @@ h3 {
   flex: 1;
   padding: 15px 0px;
 }
-.carrousel-section,
-p,
+.bloc-text > p,
 button {
   margin-top: 10px;
 }
 .bloc-carrousel {
   display: flex;
-  height: 230px;
-  width: 200px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  border: red solid 2px;
   flex: 3;
   margin: 0 10px;
   gap: 10px;
 }
 .bloc-carrousel > div {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  flex: 1;
+  width: 200px;
+  height: 250px;
 }
 .carrousel-section img {
   width: 100%;
@@ -224,5 +233,6 @@ button {
 }
 .carrousel-section i {
   color: #00aa6c;
+  margin-bottom: 10px;
 }
 /***********FOOTER**************/
