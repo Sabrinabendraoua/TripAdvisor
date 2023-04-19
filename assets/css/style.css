@@ -3,11 +3,11 @@
 }
 
 body {
-  margin: 50px 100px 0px 100px;
   font-family: "Trip Sans Reg", sans-serif;
 }
 main {
   width: 1135px;
+  margin: 50px auto 10px auto;
 }
 /***********GENERAL**************/
 .buton-black {
@@ -45,10 +45,11 @@ h5 {
 }
 /************HEADER**************/
 header {
+  width: 1135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 75px;
+  margin: 50px auto 10px auto;
 }
 header div img {
   height: 40px;
