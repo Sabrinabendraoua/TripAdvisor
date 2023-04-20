@@ -199,9 +199,8 @@ h3 {
 }
 /*-------------carrousel-section------------*/
 /* POUR MASQUER LA SCROLLBAR */
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+.bloc-carrousel::-webkit-scrollbar {
+  display: none;
 }
 .carrousel-section {
   width: 1135px;
@@ -210,32 +209,36 @@ h3 {
 .text-carrousel-section {
   display: flex;
   margin-top: 20px;
+  border: green solid 2px;
+  height: 270px;
 }
 .bloc-text {
   flex: 1;
   padding: 15px 100px 0px 0px;
 }
-.bloc-text > p,
-button {
-  margin-top: 10px;
+.bloc-text > p {
+  margin: 20px 0 10px 0;
 }
 .bloc-carrousel {
   display: flex;
   overflow-x: scroll;
   flex-wrap: nowrap;
-  /*border: red solid 2px;*/
+  border: red solid 2px;
   flex: 3;
-  margin: 0 10px;
+  height: 100%;
   gap: 10px;
 }
 .bloc-carrousel > div {
-  /*border: blue solid 2px;*/
+  border: blue solid 2px;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  width: 200px;
-  height: 250px;
+  width: calc((100% - 30px) / 3);
+  height: 100%;
   position: relative;
+}
+.bloc-carrousel a {
+  margin: 15px 0 8px 0;
 }
 
 .img-absolute {
@@ -265,8 +268,9 @@ button {
   height: 60%;
   object-fit: cover;
 }
-.carrousel-section a {
-  margin: 5px 0 8px 0;
+.bloc-text a {
+  margin: 15px 0 8px 0;
+  text-decoration: underline;
 }
 .carrousel-section p {
   font-size: 14px;
