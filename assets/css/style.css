@@ -209,7 +209,6 @@ h3 {
 .text-carrousel-section {
   display: flex;
   margin-top: 20px;
-  border: green solid 2px;
   height: 270px;
 }
 .bloc-text {
@@ -223,13 +222,11 @@ h3 {
   display: flex;
   overflow-x: scroll;
   flex-wrap: nowrap;
-  border: red solid 2px;
   flex: 3;
   height: 100%;
   gap: 10px;
 }
 .bloc-carrousel > div {
-  border: blue solid 2px;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
