@@ -299,11 +299,35 @@ footer a:hover {
 /***********BreakPoint 1184px**************/
 @media (max-width: 1184px) {
   .first-section {
-    display: flex;
     background: yellow;
   }
+  .first-section nav div {
+    width: calc((100% - 30px) / 4);
+    flex: none;
+  }
   .first-section nav {
-    width: calc((100% - 10px) / 4);
     flex-wrap: wrap;
+  }
+}
+
+/***********BreakPoint 1024px**************/
+@media (max-width: 1024px) {
+  .first-section {
+    /*background: yellow;*/
+  }
+  .first-section nav div {
+  }
+  .first-section nav {
+  }
+}
+
+/***********BreakPoint 768px**************/
+@media (max-width: 768px) {
+  .first-section {
+    background: yellow;
+  }
+  .first-section nav div {
+  }
+  .first-section nav {
   }
 }
