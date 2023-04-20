@@ -84,11 +84,11 @@ header button {
 header button:hover {
   opacity: 0.5;
 }
-/************MAIN***************/
+/********************MAIN*****************/
 
 /*-------------first-section------------*/
 .first-section {
-  position: fixed;
+  /*position: fixed;*/
   width: 1135px;
   top: 0;
   z-index: 1;
