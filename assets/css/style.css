@@ -50,6 +50,9 @@ h5 {
   font-weight: bold;
 }
 /************HEADER**************/
+.responsive-menu-bars {
+  display: none;
+}
 header {
   width: 1135px;
   display: flex;
@@ -298,6 +301,9 @@ footer a:hover {
 /***********MEDIA QUERY**************/
 /***********BreakPoint 1184px**************/
 @media (max-width: 1184px) {
+  header {
+    width: auto;
+  }
   .first-section {
     background: yellow;
   }
@@ -312,22 +318,32 @@ footer a:hover {
 
 /***********BreakPoint 1024px**************/
 @media (max-width: 1024px) {
-  .first-section {
-    /*background: yellow;*/
+  header {
+    width: auto;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 10px auto;
   }
-  .first-section nav div {
-  }
-  .first-section nav {
+  .responsive-first-section-p {
+    display: none;
   }
 }
-
 /***********BreakPoint 768px**************/
 @media (max-width: 768px) {
   .first-section {
     background: yellow;
   }
-  .first-section nav div {
+  .responsive-first-section-icon-button {
+    display: none;
   }
-  .first-section nav {
+  .fa-solid fa-magnifying-glass {
+    display: none;
+    gap: 15px;
+  }
+  .responsive-menu-bars {
+    visibility: visible;
+    margin-left: 15px;
   }
 }
