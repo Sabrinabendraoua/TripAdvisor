@@ -85,7 +85,6 @@ header button:hover {
   opacity: 0.5;
 }
 /********************MAIN*****************/
-
 /*-------------first-section------------*/
 .first-section {
   position: sticky;
@@ -293,7 +292,18 @@ footer p {
 footer a {
   font-size: 20px;
 }
-
 footer a:hover {
   color: var(--text-color);
+}
+/***********MEDIA QUERY**************/
+/***********BreakPoint 1184px**************/
+@media (max-width: 1184px) {
+  .first-section {
+    display: flex;
+    background: yellow;
+  }
+  .first-section nav {
+    width: calc((100% - 10px) / 4);
+    flex-wrap: wrap;
+  }
 }
