@@ -318,20 +318,36 @@ footer a:hover {
 
 /***********BreakPoint 1024px**************/
 @media (max-width: 1024px) {
+  /*---------------------------HEADER-----*/
   header {
     width: auto;
-    background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px auto 10px auto;
   }
+  /*------------------------FIRST-SETION-----*/
   .responsive-first-section-p {
     display: none;
   }
 }
 /***********BreakPoint 768px**************/
 @media (max-width: 768px) {
+  /*---------------------------HEADER-----*/
+  header {
+    height: 70px;
+  }
+  header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsive-menu-bars {
+    visibility: visible;
+    display: inline;
+    margin: 0 15px;
+  }
+
   .first-section {
     background: yellow;
   }
@@ -341,9 +357,5 @@ footer a:hover {
   .fa-solid fa-magnifying-glass {
     display: none;
     gap: 15px;
-  }
-  .responsive-menu-bars {
-    visibility: visible;
-    margin-left: 15px;
   }
 }
